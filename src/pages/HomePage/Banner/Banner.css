@@ -1,0 +1,40 @@
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-msg {
+    /* background-color: #f3a1c7; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* height: 741px; */
+    margin-right: 5%;
+
+}
+
+.banner-msg h1 {
+    line-height: 35px;
+    font-family: Garamond, serif;
+
+    font-weight: 900;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+}
+
+.general-h1 {
+    color: rgb(243, 222, 214);
+}
+
+.special-h1 {
+    color: rgb(240, 109, 48);
+    font-size: 300%;
+}

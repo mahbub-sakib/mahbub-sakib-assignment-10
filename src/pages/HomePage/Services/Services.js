@@ -1,6 +1,6 @@
 import React from 'react';
 import useServices from '../../../hooks/useServices';
-import { Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import './Services.css';
 
 const Services = () => {
@@ -15,10 +15,16 @@ const Services = () => {
                     <Card.Text>
                         Description: {services.desc}
                     </Card.Text>
+                    <Card.Text>
+                        <small className="text-muted">Price: {services.price}</small>
+                    </Card.Text>
                 </Card.Body>
-                <Card.Footer>
-                    <small className="text-muted">Price: {services.price}</small>
-                </Card.Footer>
+                <div className='chkOut-btn'>
+                    Checkout Now
+                </div>
+                {/* <Card.Footer>
+
+                </Card.Footer> */}
             </Card>
         )
     }

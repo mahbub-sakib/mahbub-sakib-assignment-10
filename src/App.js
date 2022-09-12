@@ -8,6 +8,7 @@ import AboutMe from './Pages/AboutMe/AboutMe';
 import Register from './Pages/AuthPages/Register/Register';
 import Login from './Pages/AuthPages/Login/Login';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

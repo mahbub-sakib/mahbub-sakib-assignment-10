@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Indoor Photography",
+        "desc": "Don't miss the perfect shot, while your pet is having a moment.",
+        "price": "500.00",
+        "image": "pet1.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Outdoor Photography",
+        "desc": "Roam and have fun.",
+        "price": "500.00",
+        "image": "pet2.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Basic Plan",
+        "desc": "Lights, camera, action! Say to your pet, be yourself!",
+        "price": "500.00",
+        "image": "pet3.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Premium Plan",
+        "desc": "Casual and simple shots. Formal portraits.",
+        "price": "500.00",
+        "image": "pet4.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Custom Plan",
+        "desc": "Letting your pets comfy.",
+        "price": "500.00",
+        "image": "pet5.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Business Plan",
+        "desc": "Portraits, landscapes and candids. Making sure luxary shots.",
+        "price": "500.00",
+        "image": "pet6.jpg"
+    }
+]

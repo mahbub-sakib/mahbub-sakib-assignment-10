@@ -1,11 +1,10 @@
 import React from 'react';
-import banner from '../../../Images/banner.jpg';
 import './Banner.css';
 
 const Banner = () => {
     return (
         <div className='banner-container'>
-            <img className='banner-img' src={banner} alt="" />
+            <img className='banner-img' src='./Images/banner.jpg' alt="" />
             <div className='banner-msg'>
                 <h1 className='general-h1'>Capture Your </h1>
                 <h1 className='general-h1'>Pawsome Moments</h1>

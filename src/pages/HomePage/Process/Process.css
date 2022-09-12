@@ -1,0 +1,15 @@
+.boxes {
+    display: flex;
+    /* gap: 12px; */
+    justify-content: space-between;
+}
+
+.box {
+    border: 1px solid black;
+    width: 275px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}

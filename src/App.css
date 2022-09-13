@@ -1,10 +1,22 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.main-body {
+  /*
+  If an element has flex: 1, it signifies that the width/height of all other elements 
+  will be the same as their content, but the element with flex: 1 will be given 
+  the remaining full space.
+  */
+  flex: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +44,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

@@ -2,10 +2,17 @@ import React from 'react';
 import useServices from '../../../hooks/useServices';
 import { Button, Card } from 'react-bootstrap';
 import './Services.css';
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
     const [services, getServices] = useServices([]);
     const imgPath = '../../../Images/';
+    const navigate = useNavigate();
+
+    const gotoCheckout = () => {
+        navigate('/checkout');
+    }
+
     const renderCard = (services, index) => {
         return (
             <Card key={index} >
@@ -19,12 +26,10 @@ const Services = () => {
                         <small className="text-muted">Price: {services.price}</small>
                     </Card.Text>
                 </Card.Body>
-                <div className='chkOut-btn'>
+                <div onClick={gotoCheckout} className='chkOut-btn'>
                     Checkout Now
                 </div>
-                {/* <Card.Footer>
 
-                </Card.Footer> */}
             </Card>
         )
     }

@@ -9,6 +9,8 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
+    let from = location.state?.from?.pathname || "/";
+
     const [
         signInWithEmailAndPassword,
         user,
@@ -17,8 +19,7 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     if (user) {
-        // navigate(from, { replace: true });
-        navigate('/home');
+        navigate(from, { replace: true });
         console.log(user);
     }
 

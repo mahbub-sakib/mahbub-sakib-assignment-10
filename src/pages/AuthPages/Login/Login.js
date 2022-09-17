@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -48,6 +49,7 @@ const Login = () => {
                 <input className='w-50 mx-auto btn btn-primary mt-2' type="submit" value="Login" />
             </form>
             <p>New to this website? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

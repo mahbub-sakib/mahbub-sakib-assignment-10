@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import './Register.css';
 
 const Register = () => {
@@ -15,6 +16,9 @@ const Register = () => {
     ] = useCreateUserWithEmailAndPassword(auth);
     const navigateLogin = () => {
         navigate('/login');
+    }
+    if (loading) {
+        return <Loading></Loading>
     }
     if (user) {
         // navigate('/home');

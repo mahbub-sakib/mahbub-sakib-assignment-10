@@ -3,8 +3,8 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className='mt-4 pt-5 pb-5 footer-container'>
-            <h2>This is footer</h2>
+        <div className='d-flex justify-content-around mt-4 pt-5 pb-5 footer-container'>
+
             <div>
                 <h3>Mahbub Bin Abdur Raquib (Sakib)</h3>
                 <h4>Pet Pthotographer</h4>

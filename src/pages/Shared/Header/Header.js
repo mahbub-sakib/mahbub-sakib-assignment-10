@@ -24,7 +24,7 @@ const Header = () => {
             </div>
             <div>
                 <ul className='nav-items'>
-                    <Link className='links' to="/aboutMe">About Me</Link>
+                    <Link className='links' to="/about">About Me</Link>
 
                     {
                         user ?

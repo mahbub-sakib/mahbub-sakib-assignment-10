@@ -4,10 +4,9 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div className='d-flex justify-content-around mt-4 pt-5 pb-5 footer-container'>
-
             <div>
                 <h3>Mahbub Bin Abdur Raquib (Sakib)</h3>
-                <h4>Pet Pthotographer</h4>
+                <p>Pet Pthotographer</p>
                 <p>Rampura, Dhaka-1219, Bangladesh</p>
             </div>
             <div>

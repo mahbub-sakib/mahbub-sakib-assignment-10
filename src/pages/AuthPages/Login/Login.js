@@ -46,9 +46,9 @@ const Login = () => {
                 <input ref={emailRef} type="email" name="email" placeholder='Email Address' id="" required />
                 <input ref={passwordRef} type="password" name="password" placeholder='Password' id="" required />
 
-                <input className='w-50 mx-auto btn btn-primary mt-2' type="submit" value="Login" />
+                <input className='w-50 mx-auto mt-2 butn-style' type="submit" value="Login" />
             </form>
-            <p>New to this website? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
+            <p className='text-center'>New to this website? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
             <SocialLogin></SocialLogin>
         </div>
     );

@@ -58,9 +58,9 @@ const Register = () => {
 
                 {passMisMatched == false && <p className='text-danger'>Messages: Two password didn't match</p>}
 
-                <input className='w-50 mx-auto btn btn-primary mt-2' type="submit" value="Register" />
+                <input className='w-50 mx-auto mt-2 butn-style' type="submit" value="Register" />
             </form>
-            <p>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' >Please Login</Link></p>
+            <p className='text-center'>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' >Please Login</Link></p>
             <SocialLogin></SocialLogin>
         </div>
     );

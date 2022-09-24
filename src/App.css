@@ -17,6 +17,7 @@
   the remaining full space.
   */
   flex: 1;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {

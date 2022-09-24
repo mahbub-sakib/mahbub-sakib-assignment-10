@@ -13,35 +13,36 @@ const Header = () => {
         signOut(auth);
     }
     const [open, setOpen] = useState(false);
+    console.log(open);
 
     return (
         <div className='header-container'>
-            <div>
-                <div className='d-lg-none'>
-                    <Link className='links ' to="/home"><img className='logo' src="./Images/logo.PNG" alt="" /></Link>
-                    <div onClick={() => setOpen(!open)} className={`my-3 menu-icon `}>
-                        {
-                            open ? <XIcon></XIcon> : <MenuIcon ></MenuIcon>
-                        }
 
-                    </div>
-                </div>
-                <ul className='nav-items'>
-                    <Link className='links' to="/home">Home</Link>
-                    <Link className='links' to="/blogs">Blogs</Link>
-                    <div className='d-none d-md-block'>
-                        <Link className='links ' to="/home"><img className='logo' src="./Images/logo.PNG" alt="" /></Link>
-                    </div>
-                    <Link className='links' to="/about">About Me</Link>
-
+            <div className='d-lg-none w-100'>
+                <Link className='links ' to="/home"><img className='logo' src="./Images/logo.PNG" alt="" /></Link>
+                <div onClick={() => setOpen(!open)} className={`my-3 menu-icon `}>
                     {
-                        user ?
-                            <button className='btn text-decoration-none mx-2' onClick={handleSignOut}>Logout</button>
-                            :
-                            <Link className='links' to="/login">Login</Link>
+                        open ? <XIcon></XIcon> : <MenuIcon ></MenuIcon>
                     }
-                </ul>
+
+                </div>
             </div>
+            <ul className={`nav-items w-100 ${open ? "d-flex flex-column nav-mob-prop" : "d-none d-lg-flex "}`}>
+                <Link className='links nav-mob-item' to="/home">Home</Link>
+                <Link className='links nav-mob-item' to="/blogs">Blogs</Link>
+                <div className='d-none d-md-block'>
+                    <Link className='links ' to="/home"><img className='logo' src="./Images/logo.PNG" alt="" /></Link>
+                </div>
+                <Link className='links nav-mob-item' to="/about">About Me</Link>
+
+                {
+                    user ?
+                        <button className='btn text-decoration-none mx-2 nav-mob-item' onClick={handleSignOut}>Logout</button>
+                        :
+                        <Link className='links nav-mob-item' to="/login">Login</Link>
+                }
+            </ul>
+
 
         </div>
     );

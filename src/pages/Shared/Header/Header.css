@@ -50,11 +50,15 @@
 }
 
 @media screen and (max-width: 768px) {
+    .nav-mob-prop {
+        background-color: white
+    }
+
     .nav-mob-item {
         color: white;
         padding: 10px 0;
         width: 100%;
-
+        background-color: #949b79;
     }
 
     .nav-mob-item:hover {

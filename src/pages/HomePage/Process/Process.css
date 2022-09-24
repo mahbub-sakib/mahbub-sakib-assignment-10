@@ -16,3 +16,16 @@
 .box p {
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+
+    .boxes {
+        display: flex;
+        /* gap: 12px; */
+        flex-direction: column;
+    }
+
+}

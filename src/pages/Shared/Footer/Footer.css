@@ -3,3 +3,9 @@
     background-color: black;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .foot-mob {
+        margin: 0 35px;
+    }
+}

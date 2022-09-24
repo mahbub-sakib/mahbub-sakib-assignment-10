@@ -18,7 +18,6 @@
     align-items: flex-end;
     /* height: 741px; */
     margin-right: 5%;
-
 }
 
 .banner-msg h1 {
@@ -37,4 +36,22 @@
 .special-h1 {
     color: rgb(240, 109, 48);
     font-size: 300%;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .banner-msg {
+        position: static;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin: 5px 0;
+    }
 }

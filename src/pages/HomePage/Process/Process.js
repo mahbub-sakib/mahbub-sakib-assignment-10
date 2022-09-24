@@ -26,7 +26,7 @@ const Process = () => {
         return content;
     }
     return (
-        <div>
+        <div className='container'>
             <h2>The Process</h2>
             <div className='boxes mx-4'>
                 {displayBoxes()}

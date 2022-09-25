@@ -13,13 +13,12 @@ const Header = () => {
         signOut(auth);
     }
     const [open, setOpen] = useState(false);
-    console.log(open);
 
     return (
         <div className='header-container'>
 
             <div className='d-lg-none w-100'>
-                <Link className='links ' to="/home"><img className='logo' src="./Images/logo.PNG" alt="" /></Link>
+                <Link className='links ' to="/home"><img className='logo' src="../Images/logo.PNG" alt="" /></Link>
                 <div onClick={() => setOpen(!open)} className={`my-3 menu-icon `}>
                     {
                         open ? <XIcon></XIcon> : <MenuIcon ></MenuIcon>
@@ -27,11 +26,11 @@ const Header = () => {
 
                 </div>
             </div>
-            <ul className={`nav-items w-100 ${open ? "d-flex flex-column nav-mob-prop" : "d-none d-lg-flex "}`}>
+            <ul className={`nav-items w-100 ${open ? "d-flex flex-column" : "d-none d-lg-flex "}`}>
                 <Link className='links nav-mob-item' to="/home">Home</Link>
                 <Link className='links nav-mob-item' to="/blogs">Blogs</Link>
                 <div className='d-none d-md-block'>
-                    <Link className='links ' to="/home"><img className='logo' src="./Images/logo.PNG" alt="" /></Link>
+                    <Link className='links ' to="/home"><img className='logo' src="../Images/logo.PNG" alt="" /></Link>
                 </div>
                 <Link className='links nav-mob-item' to="/about">About Me</Link>
 
@@ -42,6 +41,7 @@ const Header = () => {
                         <Link className='links nav-mob-item' to="/login">Login</Link>
                 }
             </ul>
+
 
 
         </div>

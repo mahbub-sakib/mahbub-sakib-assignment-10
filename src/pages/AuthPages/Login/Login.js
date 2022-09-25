@@ -31,7 +31,6 @@ const Login = () => {
 
     if (user) {
         navigate(from, { replace: true });
-        console.log(user);
     }
     if (error) {
         errorElement = <p className='text-danger pe-auto mx-auto text-center'>Error: {error?.message}</p>

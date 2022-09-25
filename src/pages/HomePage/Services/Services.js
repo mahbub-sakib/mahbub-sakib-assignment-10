@@ -9,8 +9,9 @@ const Services = () => {
     const imgPath = '../../../Images/';
     const navigate = useNavigate();
 
-    const gotoCheckout = () => {
-        navigate('/checkout');
+    const gotoCheckout = (id) => {
+        console.log(id);
+        navigate(`/checkout/${id}`);
     }
 
     const renderCard = (services, index) => {
@@ -26,7 +27,7 @@ const Services = () => {
                         <small className="text-muted">Price: {services.price}</small>
                     </Card.Text>
                 </Card.Body>
-                <div onClick={gotoCheckout} className='chkOut-btn'>
+                <div onClick={() => gotoCheckout(services.id)} className='chkOut-btn'>
                     Checkout Now
                 </div>
 
